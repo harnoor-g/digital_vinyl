@@ -28,11 +28,11 @@ header#main .logo a {
 /*** Background ***/
 
 div#home {
-    background: url(../Images/vinyl.png);
+    background: url(../imgs/vinyl.png);
     background-repeat: no-repeat;
     background-position-x: left;
     background-position-y: top;
-    background-size: contain;
+    background-size: cover;
     color: #f1f1f3;
     height: 671px;
 }
@@ -68,18 +68,18 @@ nav#main ul li a {
     padding: 8px 10px;
     border-radius: 5px;
 }
-nav#main ul li a:hover {
+nav#main ul li a:hover:not(.active) {
     border-color: #f1f1f3;
 }
-nav#main ul li.selected a {
-    background-color: #f1f1f3;
+nav#main ul li .active {
     color: #f37161;
+    background-color: #f1f1f3;
 }
 
 
-/*** Home Page ***/
+/*** Lists ***/
 
-.initial {
+ul#main_bttns li {
     text-align: center;
 }
 
@@ -88,12 +88,43 @@ nav#main ul li.selected a {
 
 .button {
     display: block;
-    padding: 15px 45px;
+    padding: 15px 105px;
+    width: 500px;
     border-radius: 15px;
     background-color: #66a796;
     font-family: "Pacifico";
+    font-size: 20pt;
 }
 .button:hover {
     background: #dabf44;
     color: #fff;
 }
+.button a,
+.button a:hover{
+    color: #f1f1f3;
+}
+
+
+/*** Titles  ***/
+
+.title {
+    text-align: center;
+}
+.title h2 {
+    color: #66a796;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.title p {
+    margin-bottom: 60px;
+}
+
+
+/*** Form ***/
+
+.form {
+    display: block;
+}
+
+/*** Recorder ***/
+
