@@ -3,8 +3,8 @@
     <head>
         <title>Digital Vinyl</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/foundation.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="CSS/foundation.min.css">
+        <link rel="stylesheet" href="CSS/main.css">
         <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Pacifico&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -17,8 +17,8 @@
                 </div>
                 <nav id="main" class="large-8 column">
                     <ul>
-                        <li><a class="active" href="index.html">Home</a></li>
-                        <li><a href="record.html">Record</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a class="active" href="record.html">Record</a></li>
                         <li><a href="listen.html">Listen</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact us</a></li>
@@ -26,17 +26,19 @@
                 </nav>
             </header>
         </div>
-        <div id="home">
-            <div class="container-spacy">
-                <div class="row">
-                    <div class="large-8 coloumn">
-                        <ul id="main_bttns">
-                            <li><a href="record.html" class="button">Share your story</a></li>
-                            <li><a href="listen.html" class="button">Listen to stories</a></li>
-                        </ul>
-                    </div>
+        <div class="container background-white">
+            <div class="row">
+                <div class="large-6 column">
+                    <!-- <h3>You can add a pre-recorded file</h3>
+                    <input type="file" accept="audio/*" capture id="recorder"> -->
+                    
+                    <h2>Record</h2>
+                        <button id=record>Start</button>
+                        <button id=stopRecord disabled>Stop</button>
+                        <audio id=recordedAudio></audio>
                 </div>
             </div>
         </div>
     </body>
+    <script src="js/record.js"></script>
 </html>
