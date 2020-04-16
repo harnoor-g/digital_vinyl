@@ -123,7 +123,30 @@ ul#main_bttns li {
 /*** Form ***/
 
 .form {
-    display: block;
+    width: 500px;
+    box-shadow: 0 0 20px 0 #999;
+    /* top: 50%;
+    bottom: 50%; */
+    /* transform: translate(-50%, -50%); */
+    position: relative;
+}
+/* form {
+    margin: auto;
+    width: 60%;
+} */
+.input {
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+}
+.field {
+    height: 150px;
+    padding-top: 10px;
 }
 
 /*** Recorder ***/
