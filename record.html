@@ -29,8 +29,10 @@
         <div class="container background-white">
             <div class="row">
                 <div class="large-6 column">
-                    <!-- <h3>You can add a pre-recorded file</h3>
-                    <input type="file" accept="audio/*" capture id="recorder"> -->
+                    <h3>You can add a pre-recorded file</h3>
+                    <!-- <progress value="0" max="100" id="uploader">0%</progress> -->
+                    <input type="file" id="file_button" accept="audio/*"><br><br>
+                    <button type="button" onclick="upload()">Upload</button>
                     
                     <h2>Record</h2>
                         <button id=record>Start</button>
@@ -39,6 +41,30 @@
                 </div>
             </div>
         </div>
+
+
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#config-web-app -->
+
+        <script>
+            // Web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyCkD-p467U14qtLtKjbojVZ6klOt5HLI2E",
+                authDomain: "digital-vinyl.firebaseapp.com",
+                databaseURL: "https://digital-vinyl.firebaseio.com",
+                projectId: "digital-vinyl",
+                storageBucket: "digital-vinyl.appspot.com",
+                messagingSenderId: "621321704725",
+                appId: "1:621321704725:web:86a06de43c30054c7e851c"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+        </script>
+        <script src="js/storage.js"></script>
     </body>
     <script src="js/record.js"></script>
 </html>
