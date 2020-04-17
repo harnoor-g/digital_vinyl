@@ -79,8 +79,10 @@ nav#main ul li .active {
 
 /*** Lists ***/
 
-ul#main_bttns li {
-    text-align: center;
+ul#main_bttns {
+    margin-left:100px;
+    margin-top: 100px;
+
 }
 
 
@@ -121,10 +123,142 @@ ul#main_bttns li {
 
 
 /*** Form ***/
+.row{
+    width: ;
 
-.form {
+}
+/* .form {
+    width:100%;
     display: block;
+    box-shadow: 0 0 20px 0 #999;
+    position:center;
+    margin-left:40%;
+    padding:2vw;
+    width: 20%;
+    position: relative;
+}
+#insideForm{
+    align:center;
+    display:inline-block;
+    width:10px;
+    margin-top:5vw;
+    padding:2vw;
+
+
+} */
+
+form{
+    /* padding:20px; */
+    /* width: 300px; */
+    width:60%;
+    text-align:center;
+    /* margin-left:28%; */
+    box-shadow: 0 0 20px 0 #999;
+
+}
+.formControl{
+    height:30px;
+    width: 440px;
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    padding:5px;
+    border-radius:15px;
+
 }
 
+.formControl.message{
+    height:130px;
+    padding-top:10px;
+    border-color:grey;
+}
+
+.formControl.submit{
+    float: right;
+    margin-right: 40px;
+    width: 100px;
+    font-size: 20px;
+    height:45px;
+    margin-bottom: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    background-color:rgb(224, 214, 201);
+    color: black;
+}
+.formControl.submit:hover{
+    background-color: rgb(0, 190, 117);
+    color: black;
+}
+
+
+
+
+/* Record */
+
+
+#recordHeading{
+width:100%;
+text-align:center;
+margin-left:50%;
+font-family: "Lato";
+color: #66a796;
+text-transform: uppercase;
+padding-bottom:20px;
+
+
+
+}
+#recBtns{
+    width:220%;
+
+}
+
+#recBtns button{
+    align:left;
+    width:20%;
+    display:inline;
+    /* margin-left:20px; */
+
+    /* padding-right:150px; */
+    
+}
+#stopRecord button{
+    margin-left:60px;
+    background:#66a796;
+}
+
+/* About */
+
+
+.about{
+    width:100%;
+    font-family: "Lato";
+    background:#f1f1f3;
+    background-size: cover;
+
+}
+.about h3{
+    color:#66a796;
+    font-family: "Lato";
+
+}
+
+#aboutPara{
+    /* width:400px; */
+/* display:inline-block;
+text-align:center; */
+position:absolute;
+top:20%;
+left:50%;
+transform:translate(-50%,0%);
+font-family:"Lato";
+padding-left:25%;
+padding-right:25%;
+padding-top:1.4%;
+}
+
+#aboutPara p{
+    padding-top:1vw;
+}
 /*** Recorder ***/
 
