@@ -123,10 +123,10 @@ ul#main_bttns {
 
 
 /*** Form ***/
-.row{
+/* .row{
     width: ;
 
-}
+} */
 /* .form {
     width:100%;
     display: block;
@@ -195,7 +195,7 @@ form{
 
 /* Record */
 
-
+/* 
 #recordHeading{
 width:100%;
 text-align:center;
@@ -221,13 +221,13 @@ padding-bottom:20px;
 
     /* padding-right:150px; */
     
-}
+/* }
 #stopRecord button{
     margin-left:60px;
     background:#66a796;
 }
-
-/* About */
+ */
+/*** About ***/
 
 
 .about{

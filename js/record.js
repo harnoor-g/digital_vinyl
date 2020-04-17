@@ -11,12 +11,33 @@ function handlerFunction(stream) {
             recordedAudio.src = URL.createObjectURL(blob);
             recordedAudio.controls = true;
             recordedAudio.autoplay = false;
-            sendData(blob);
+            uploadRec.disabled = false;
+            uploadRec.onclick = () => {
+                sendData(blob);
+            }
         }
     };
 }
 
-function sendData(data) {}
+function sendData(data) {
+    let storageRef = firebase.storage().ref("recorded_audio/" + data);
+    let task = storageRef.put(data);
+
+    task.on('state_changed', 
+        function progress(snapshot) {
+            let percent = snapshot.bytesTransferred / snapshot.totalBytes * 100;
+            console.log("upload is " + percent +" done");
+        },
+        function error(err){
+            console.log(err.message);
+        },
+        function complete() {},
+        function () {task.snapshot.ref.getDownloadURL().then(
+            function (downlaodURL) {
+            console.log(downlaodURL);
+        });
+    });
+}
 
 record.onclick = (e) => {
     console.log("I was clicked");
